@@ -2,7 +2,6 @@
 .chef/cache/
 .chef/checksums/
 Attic
-roles/private_settings.rb
 .DS_Store
 
 # keep CoRD.app's *.rdp files out of the repo, they may contain passwds

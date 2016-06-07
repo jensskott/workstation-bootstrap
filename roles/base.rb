@@ -4,25 +4,10 @@ description "base role for workstation setup"
 run_list %w[
   role[private_settings]
 
-  recipe[apps::dropbox]
   recipe[apps::chrome]
   recipe[apps::skype]
-  recipe[apps::alfred]
   recipe[apps::vlc]
   recipe[apps::iterm2]
-  recipe[apps::expandrive]
-  recipe[apps::1password]
-  recipe[apps::istat_pro]
-  recipe[apps::sublime_text]
-  recipe[apps::sublime_text_settings]
-  recipe[apps::tunnelblick]
-  recipe[apps::cord]
-  recipe[apps::keepassx]
-  recipe[apps::chicken]
-  recipe[apps::xquartz]
-  recipe[apps::picasa]
-  recipe[apps::picasa_settings]
-
   recipe[homebrew]
   recipe[homebrew::environment]
   recipe[homebrew::taps]
@@ -59,9 +44,6 @@ default_attributes({
   "homebrew" => {
     "packages" => %w[
       wget
-      git-flow
-      mysql
-      redis
       nmap
       p7zip
       parallel
